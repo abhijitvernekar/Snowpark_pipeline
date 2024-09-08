@@ -1,8 +1,8 @@
-{"account":"ovmyonn-cp58207",
-"user":"pradeep",
-"password": "Abcd067$",
-"role":"ACCOUNTADMIN",
-"warehouse":"COMPUTE_WH",
-"database":"DEMO_DB",
-"schema":"PUBLIC"
+{"account":"dbobrgv-cfa87896", 
+"user":"AVERNEKAR", 
+"password": "Gspot@123", 
+"role":"ACCOUNTADMIN", 
+"warehouse":"COMPUTE_WH", 
+"database":"DEMO_DB", 
+"schema":"PUBLIC" 
 }
