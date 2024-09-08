@@ -8,9 +8,9 @@ from generic_code import code_library
 
 # Make connection and create Snowpark session.
 # Please mention your snowflake account credentials below,
-connection_parameters = {"account":"ovmyonn-cp58207", \
-"user":"pradeep", \
-"password": "Abcd067$", \
+connection_parameters = {"account":"dbobrgv-cfa87896", \
+"user":"AVERNEKAR", \
+"password": "Gspot@123", \
 "role":"ACCOUNTADMIN", \
 "warehouse":"COMPUTE_WH", \
 "database":"DEMO_DB", \
@@ -19,3 +19,11 @@ connection_parameters = {"account":"ovmyonn-cp58207", \
 
 # Create connection with snowflake and return the session
 session = code_library.snowconnection(connection_parameters)
+
+session = Session.builder.configs(connection_parameters).create()
+session.session_id
+current_user = session.sql("select current_user()").collect()
+current_user[0][0]
+
+session.get_current_warehouse()
+session.get_current_role()
